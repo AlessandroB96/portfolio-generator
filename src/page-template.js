@@ -1,13 +1,14 @@
 //create an about section
+
 const generateAbout = aboutText => {
     if(!aboutText) {
         return '';
     }
     return `
-     <section class="my-3" id="about">
+    <section class="my-3" id="about">
         <h2 class="text-dark bg-primary p-2 display-inline-block">About Me</h2>
         <p>${aboutText}</p>
-     </section>
+    </section>
     `;
 };
 
@@ -113,6 +114,8 @@ const generateProjects = projectsArr => {
     // </section>
     // `;
 
+
+//export function to generate the entire page
 module.exports = templateData => {
     console.log(templateData);
 
@@ -157,5 +160,3 @@ module.exports = templateData => {
     </html>
     `;
   };
-
- 
